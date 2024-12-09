@@ -12,22 +12,30 @@ Chatty Co-Pilot is an interactive AI-powered co-pilot designed to enhance immers
 
 ## Roadmap
 
-### **Phase 1: Initial AI Integration (Completed)**
+### **Phase 1: Initial AI Integration - _Ears and Mouth_ (Completed)**
 - [x] Basic conversational capabilities.
 - [x] Speech recognition via Google Speech Recognition API.
 - [x] Text-to-Speech integration with Azure Cognitive Services.
 - [x] Personality-based interaction and voices.
 - [x] Summarization for efficient memory management in conversations.
 
-### **Phase 2: Enhanced Interactivity (In Progress)**
+### **Phase 2: Enhanced Interactivity - _Eyes Phase 1_ (In Progress)**
 - [ ] Implement dynamic checklists for various flight phases (e.g., Startup, Taxi, Takeoff, Landing, Shutdown).
-- [ ] Voice-guided checklist management with step-by-step interaction.
+- [ ] Introduce SimConnect integration to provide awareness of:
+  - [ ] Pre-flight briefings (passenger/weight details, procedure deviations).
+  - [ ] Weather feedback during taxi (wind, icing risks, etc.).
+  - [ ] Mid-flight alerts for warnings or cautions.
+  - [ ] Post-flight recap (flight time, speed, altitude, etc.).
 - [ ] Expand the list of personalities and refine existing ones for greater diversity and immersion.
 
-### **Phase 3: Simulator Integration**
-- [ ] Integrate with SimConnect and SPAD.neXt to read and react to flight data (e.g., autopilot state, altitude, and engine status).
+### **Phase 3: Advanced Simulator Integration - _Eyes Phase 2_**
+- [ ] Deepen SimConnect integration for real-time co-pilot awareness:
+  - [ ] React to extreme vertical speeds or abrupt altitude changes.
+  - [ ] Report distance to and altitude of the next waypoint as it’s passed.
+  - [ ] Warn about fuel levels (single warning to avoid repetition).
+  - [ ] Announce and respond to warnings or cautions when taxiing or in-flight.
 - [ ] Trigger co-pilot responses and actions based on simulator events.
-- [ ] Allow the co-pilot to manage controls (e.g., set autopilot parameters, flaps, and landing gear) upon request.
+- [ ] Allow the co-pilot to manage controls (e.g., set autopilot parameters, flaps, landing gear) upon request.
 
 ### **Phase 4: Application Packaging**
 - [ ] Create a user-friendly GUI for configuration and operation.
@@ -37,6 +45,7 @@ Chatty Co-Pilot is an interactive AI-powered co-pilot designed to enhance immers
 ### **Phase 5: Immersive Add-Ons**
 - [ ] Support custom AI training for user-specific co-pilot styles.
 - [ ] Introduce advanced co-pilot features (e.g., flight planning, ATC interaction).
+- [ ] Enable real-time companion apps (phone/tablet) for gauges, warnings, and data visualization.
 
 ## Requirements
 - **Python 3.8+**
@@ -53,8 +62,8 @@ Chatty Co-Pilot is an interactive AI-powered co-pilot designed to enhance immers
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/chatty-copilot.git
-   cd chatty-copilot
+   git clone https://github.com/KyleApsey/chatty_copilot.git
+   cd chatty_copilot
    ```
 2. Create and activate a virtual environment:
     ```bash
