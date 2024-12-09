@@ -1,0 +1,15 @@
+# VSCode-specific settings
+.vscode/
+
+# IDE-specific settings
+.idea
+
+# Environment variables
+.env
+
+# Python virtual environment
+venv/
+
+# Compiled Python files
+__pycache__/
+*.pyc
